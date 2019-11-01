@@ -2,8 +2,8 @@
 # web-electron-expo template
 
 ## Dependencies
-* Have Java (>8) installed
-* Have node installed (>8)
+* Have Java (>=8) installed
+* Have node (>=8) installed
 * run `npm install`
 
 ## Usage
