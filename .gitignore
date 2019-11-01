@@ -1,0 +1,17 @@
+node_modules/**/*
+.expo/*
+.cpcache/*
+npm-debug.*
+*.jks
+*.p12
+*.key
+*.mobileprovision
+out/
+.lan-ip
+.shadow-cljs/
+.nrepl-port
+pom.xml
+.idea/
+*.iml
+app/
+target/

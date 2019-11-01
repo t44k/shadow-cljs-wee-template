@@ -1,0 +1,6 @@
+
+if test -f ".lan-ip"; then
+   HOST=`head -n 1 .lan-ip`
+   export REACT_NATIVE_PACKAGER_HOSTNAME=$HOST
+   export SERVER_HOSTNAME=$HOST
+fi

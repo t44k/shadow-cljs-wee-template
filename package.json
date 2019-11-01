@@ -1,0 +1,22 @@
+{
+    "name": "Shadow-cljs wee template",
+    "version": "0.0.1",
+    "description": "Web Electrol Expo cljs template",
+    "main": "target/electron-main/main.js",
+    "author": "Tamas Korodi <tkorodi@me.com>",
+    "license": "UNLICENSED",
+    "private": true,
+    "dependencies": {
+        "create-react-class": "^15.6.3",
+        "expo": "^35.0.0",
+        "react": "16.9.0",
+        "react-dom": "^16.9.0",
+        "react-native": "^0.61.2",
+        "ws": "^7.1.2"
+    },
+    "devDependencies": {
+        "electron": "^6.0.12",
+        "source-map-support": "^0.5.13",
+        "expo-cli": "^3.4.1"
+    }
+}

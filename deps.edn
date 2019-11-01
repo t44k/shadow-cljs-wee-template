@@ -1,0 +1,19 @@
+{:paths []
+ :deps {org.clojure/clojure {:mvn/version "1.10.0"}}
+ :aliases {:dev {:extra-paths ["dev"]}
+           :server {:extra-paths ["src_server"]
+                    :extra-deps {http-kit {:mvn/version "2.3.0"}}}
+           :client {:extra-deps {thheller/shadow-cljs {:mvn/version "2.8.64"}
+                                 cider/cider-nrepl {:mvn/version "0.22.4"}
+                                 org.clojure/core.async {:mvn/version "0.4.500"}
+                                 haslett {:mvn/version "0.1.6"}
+                                 re-frame {:mvn/version "0.11.0-rc2"}}
+                    :extra-paths ["src_client"]}
+           :web {:extra-paths ["src_web" "resources"]
+                 :extra-deps {reagent {:mvn/version "0.8.1"}}}
+           :electron-main {:extra-paths ["src_electron_main"]
+                           :extra-deps {}}
+           :electron-web {:extra-paths ["src_electron_web"]
+                          :extra-deps {}}
+           :expo {:extra-paths ["src_expo"]
+                  :extra-deps {}}}}

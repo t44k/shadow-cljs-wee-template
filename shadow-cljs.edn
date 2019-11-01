@@ -1,0 +1,35 @@
+;; shadow-cljs configuration
+{:deps true
+ :dev-http {9500 {:roots ["static/web"
+                          "target/web"]}
+            9501 {:roots ["static/electron-web"
+                          "target/electron-web"]}}
+ 
+ :builds
+ {:web {:target :browser
+        :output-dir "target/web"
+        :modules {:main {:init-fn wee.web/main}}
+        :deps {:aliases [:client :web]}
+        :closure-defines {wee.client/SERVER-HOST #shadow/env
+                          "SERVER_HOSTNAME"}}
+  :electron-main {:target :node-script
+                  :output-to "target/electron-main/main.js"
+                  :main wee.electron-main/main
+                  :deps {:aliases [:client :electron-main]}
+                  :closure-defines {wee.client/SERVER-HOST #shadow/env
+                                    "SERVER_HOSTNAME"}}
+  :electron-web {:target :browser
+                 :output-dir "target/electron-web"
+                 :asset-path "assets"
+                 :modules {:main {:init-fn wee.electron-web/main}}
+                 :deps {:aliases [:client :web :electron-web]}
+                 :closure-defines {wee.client/SERVER-HOST #shadow/env
+                                   "SERVER_HOSTNAME"}}
+  :expo {:target :react-native
+         :init-fn wee.expo/main
+         :output-dir "target/expo"
+         :deps {:aliases [:client :expo]}
+         :devtools {:autoload true
+                    :preloads [shadow.expo.keep-awake]}
+         :closure-defines {wee.client/SERVER-HOST #shadow/env
+                           "SERVER_HOSTNAME"}}}}

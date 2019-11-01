@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "Shadow-cljs wee template",
+    "description": "Web Electrol Expo cljs template",
+    "slug": "wee",
+    "sdkVersion": "34.0.0",
+    "version": "1.0.0",
+    "orientation": "portrait",
+      "primaryColor": "#cccccc",
+      "entryPoint": "./target/expo/index.js",  
+    "privacy": "public",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+	"supportsTablet": true,
+	"bundleIdentifier": "net.kotyo.wee"
+    }
+  }
+}
