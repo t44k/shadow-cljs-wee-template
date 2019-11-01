@@ -3,6 +3,7 @@
 
 ## Dependencies
 * Have Java (>=8) installed
+* Have clojure tools cli installed [command line tools](https://clojure.org/guides/getting_started)
 * Have node (>=8) installed
 * run `npm install`
 
