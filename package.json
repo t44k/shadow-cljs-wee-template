@@ -15,7 +15,7 @@
         "ws": "^7.1.2"
     },
     "devDependencies": {
-        "electron": "^6.0.12",
+        "electron": "^9.4.0",
         "source-map-support": "^0.5.13",
         "expo-cli": "^3.4.1"
     }
